@@ -1,0 +1,12 @@
+
+hello.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_main:
+       0:	55 	pushq	%rbp
+       1:	48 89 e5 	movq	%rsp, %rbp
+       4:	48 8d 3d 09 00 00 00 	leaq	9(%rip), %rdi
+       b:	e8 00 00 00 00 	callq	0 <_main+0x10>
+      10:	31 c0 	xorl	%eax, %eax
+      12:	5d 	popq	%rbp
+      13:	c3 	retq

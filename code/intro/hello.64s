@@ -1,0 +1,19 @@
+	.section	__TEXT,__text,regular,pure_instructions
+	.build_version macos, 10, 14
+	.globl	_main                   ## -- Begin function main
+_main:                                  ## @main
+## %bb.0:
+	pushq	%rbp
+	movq	%rsp, %rbp
+	leaq	L_str(%rip), %rdi
+	callq	_puts
+	xorl	%eax, %eax
+	popq	%rbp
+	retq
+                                        ## -- End function
+	.section	__TEXT,__cstring,cstring_literals
+L_str:                                  ## @str
+	.asciz	"hello, world"
+
+
+.subsections_via_symbols
